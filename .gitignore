@@ -1,0 +1,5 @@
+*.PNG
+*.log
+__pycache__/
+.ipynb_checkpoints/
+Banana_Windows_x86_64/
