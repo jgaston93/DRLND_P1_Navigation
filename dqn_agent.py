@@ -36,6 +36,7 @@ class Agent():
         self.state_size = state_size
         self.action_size = action_size
         self.seed = random.seed(seed)
+        self.B = 0.4
         
         self.double_dqn = double_dqn
         self.priority_replay = priority_replay
@@ -52,7 +53,7 @@ class Agent():
 
         # Replay memory
         if self.priority_replay:
-            self.memory = PrioritizedReplayBuffer(state_size, BUFFER_SIZE, BATCH_SIZE, seed, use_rank=True)
+            self.memory = PrioritizedReplayBuffer(state_size, BUFFER_SIZE, BATCH_SIZE, seed, use_rank=False)
         else:
             self.memory = ReplayBuffer(state_size, BUFFER_SIZE, BATCH_SIZE, seed)
         
