@@ -19,14 +19,14 @@ To set up your python environment to run the code in this repository, follow the
 -   **Linux**  or  **Mac**:
     
 ```
-    conda create --name drlnd python=3.6
-    source activate drlnd
+conda create --name drlnd python=3.6
+source activate drlnd
 ```
    -   **Windows**:
   
-```  
-    conda create --name drlnd python=3.6
-    activate drlnd
+ ```  
+conda create --name drlnd python=3.6
+activate drlnd
 ```
 2.  Follow the instructions in  [this repository](https://github.com/openai/gym)  to perform a minimal install of OpenAI gym.
     
@@ -37,9 +37,15 @@ To set up your python environment to run the code in this repository, follow the
 pip install .
 ```
 4.  Create an  [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html)  for the  `drlnd`  environment.
-
+```
 python -m ipykernel install --user --name drlnd --display-name "drlnd"
-
+```
 5.  Before running code in a notebook, change the kernel to match the  `drlnd`  environment by using the drop-down  `Kernel`  menu.
+
+6. Finally you need to download the pre-built unity training environment and unzip this into the repo
+	-   Linux:  [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
+	-   Mac OSX:  [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
+	-   Windows (32-bit):  [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
+	-   Windows (64-bit):  [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
 ### Instructions
-To train the agent simply start the Jupyter notebook and follow the instructions listed in the cells. 
+To train the agent simply start the Jupyter notebook and step through `Navigation.ipynb`
