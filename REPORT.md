@@ -4,10 +4,14 @@
 ### Learning Algorithm
 Deep Q-learning is an adaptation of the traditional Q-learning algorithm that employs a deep neural network in replacement of a Q-table. This deep neural network provides Q-values similar to a Q-table. Unlike the Q-table the deep neural network can handle more complex continuous state spaces. 
 ##### Reinforcement Learning
+
 ![Reinforcement Learning](/images/reinforcement_learning.png?raw=true "Reinforcement Learning")
+
 To give some background this learning algorithm is typically deployed in a Reinforcement Learning framework. This framework involves an agent, a set of states, a set of actions, and a reward component. An agent in this environment is given a state and selects an action based on this current state. Given the current state and the selected action, the environment then transitions to a new state. The agent is given the new state and a reward for taking the previous action in the previous state. This process continues indefinitely or until the agent reaches a terminal state. 
 ##### Q-Values and update function
+
 ![Q-function](/images/q_function.png?raw=true "Q-function")
+
 Q-values correspond to the estimation of how good it is to take a particular action in a given state. The deep neural network predicts these values to choose the action an agent will take based on the current state. The rewards returned by the environment are used to help generate better estimates of these Q-values and are used to train the network and push it towards a better policy. 
 
 ![Q-learning update function](/images/q_update.png?raw=true "Q-learning update function")
