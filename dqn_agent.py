@@ -17,7 +17,7 @@ LR = 5e-4               # learning rate
 UPDATE_EVERY = 4        # how often to update the network
 
 A = 0.6
-B_GROWTH_RATE = 0.005
+B_GROWTH_RATE = 3e-5
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
