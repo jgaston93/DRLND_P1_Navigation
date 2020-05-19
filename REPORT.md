@@ -90,5 +90,11 @@ In this implementation the agent was able to solve the environment in 457 episod
 
 These plots could be helpful in showing how B and Epsilon affect convergence to better tune these two variables. 
 
+##### Trained Agent
+
+![Trained Agent](/images/trained_agent.gif?raw=true "Trained Agent")
+
+A gif of the trained agent using the saved weights is seen above. The agent can navigate between blue bananas and specifically targets the yellow bananas. 
+
 ### Ideas for Future Work
 
