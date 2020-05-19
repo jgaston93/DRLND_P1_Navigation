@@ -5,6 +5,8 @@
 
 This project involves training an agent to navigate through a large square environment filled with bananas. The agent's goal is to collect as many yellow bananas as possible while also avoiding the blue bananas. The agent receives a reward of +1 for collecting yellow bananas and a reward of -1 for collecting blue bananas. 
 
+![Trained Agent](/images/trained_agent.gif?raw=true "Trained Agent")
+
 ##### State Space
 The state space available to the agent includes 37 dimensions. These dimensions include the agents velocity as well as ray-based perception of objects around the agent's forward direction. 
 ##### Action Space
