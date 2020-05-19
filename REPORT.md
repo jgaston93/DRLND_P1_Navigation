@@ -42,13 +42,13 @@ At a high level the agent takes an action in a state and receives a new state an
 ### Plot of Rewards
 
 ```
-Episode 100     Average Score: 0.80
-Episode 200     Average Score: 3.65
-Episode 300     Average Score: 7.95
-Episode 400     Average Score: 9.80
-Episode 500     Average Score: 12.22
-Episode 516     Average Score: 13.02
-Environment solved in 416 episodes!     Average Score: 13.02
+Episode 100	Average Score: 1.03
+Episode 200	Average Score: 3.90
+Episode 300	Average Score: 7.32
+Episode 400	Average Score: 11.15
+Episode 500	Average Score: 12.01
+Episode 557	Average Score: 13.04
+Environment solved in 457 episodes!	Average Score: 13.04
 ```
 
 ![Reward Plot](/images/plot.png?raw=true "Reward Plot")
