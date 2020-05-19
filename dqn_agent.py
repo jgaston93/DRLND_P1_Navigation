@@ -16,15 +16,16 @@ TAU = 1e-3              # for soft update of target parameters
 LR = 5e-4               # learning rate 
 UPDATE_EVERY = 4        # how often to update the network
 
-A = 0.6
-B_GROWTH_RATE = 3e-5
+A = 0.6                 # Priority scaling factor
+B_GROWTH_RATE = 3e-5    # IS Weight scaling factor growth rate
+B_START = 0.4           # IS Weight scaling factor starting value
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 class Agent():
     """Interacts with and learns from the environment."""
 
-    def __init__(self, state_size, action_size, seed, double_dqn=False, priority_replay=False, dueling_network=False):
+    def __init__(self, state_size, action_size, seed, double_dqn=True, priority_replay=True, dueling_network=True):
         """Initialize an Agent object.
         
         Params
@@ -36,7 +37,7 @@ class Agent():
         self.state_size = state_size
         self.action_size = action_size
         self.seed = random.seed(seed)
-        self.B = 0.4
+        self.B = B_START
         
         self.double_dqn = double_dqn
         self.priority_replay = priority_replay
