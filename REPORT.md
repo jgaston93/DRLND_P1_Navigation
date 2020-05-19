@@ -33,7 +33,7 @@ To put all of this together the agent first chooses an action based on the curre
 
 Along with experience replay this implementation all makes use of the other improvements listed in the course. These improvements include the Double DQN, Prioritized Experience Replay, and the Dueling DQN.
 
-Double DQN involves having two neural networks. A second neural network is used to predict the td-target that is used to calculate the td-error. This helps with the problem of overestimation of Q-values that occured in the vanilla update function. 
+Double DQN involves having two neural networks. A second neural network is used to predict the td-target that is used to calculate the td-error. To calculate the td-target an action is chosen based on the online policy but the Q-value of this action is calculated based on the second offline network. This helps with the problem of overestimation of Q-values that occured in the vanilla update function. 
 
 [Double DQN paper](https://arxiv.org/abs/1509.06461)
 
@@ -89,4 +89,6 @@ Environment solved in 457 episodes!	Average Score: 13.04
 In this implementation the agent was able to solve the environment in 457 episodes. The above plot shows the scores in blue as the agent progresses through time. The importance sampling weight scaling factor, B, and Epsilon are plotted alongside the scores to show how these values change as the agent is converging to a sufficient policy. B is shown in red and Epsilon is shown in green. 
 
 These plots could be helpful in showing how B and Epsilon affect convergence to better tune these two variables. 
+
+### Ideas for Future Work
 
