@@ -31,7 +31,7 @@ source activate drlnd
 conda create --name drlnd python=3.6
 activate drlnd
 ```
-2.  Follow the instructions in  [this repository](https://github.com/openai/gym)  to perform a minimal install of OpenAI gym.
+2. Follow the instructions in  [this repository](https://github.com/openai/gym)  to perform a minimal install of OpenAI gym.
 
 3. Follow the instructions [here](https://pytorch.org/)  to install pytorch.
 
