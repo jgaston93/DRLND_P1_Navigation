@@ -75,13 +75,13 @@ In total this network contains 21,760 tunable weights.
 ### Plot of Rewards
 
 ```
-Episode 100	Average Score: 1.03
-Episode 200	Average Score: 3.90
-Episode 300	Average Score: 7.32
-Episode 400	Average Score: 11.15
-Episode 500	Average Score: 12.01
-Episode 557	Average Score: 13.04
-Environment solved in 457 episodes!	Average Score: 13.04
+Episode 100	Average Score: 1.17
+Episode 200	Average Score: 3.73
+Episode 300	Average Score: 6.60
+Episode 400	Average Score: 9.61
+Episode 500	Average Score: 12.51
+Episode 522	Average Score: 13.00
+Environment solved in 422 episodes!	Average Score: 13.00
 ```
 
 ![Reward Plot](/images/plot.png?raw=true "Reward Plot")
@@ -92,3 +92,10 @@ These plots could be helpful in showing how B and Epsilon affect convergence to 
 
 ### Ideas for Future Work
 
+The first obvious ideas for improvements are incorporating the three other improvements that were included in the Rainbow algorithm. These improvements include multi-step learning, distributional RL, and noisy nets. These three improvements combined with the ones already implemented in this repo have been shown to provide state-of-the-art performance on the Atari 2600 benchmark.
+
+Further improvements could be made via more detailed hyperparamter tuning. An analysis of how the varying hyper paramters are changing compared to the convergence of the network could provide more insight into the starting and stopping points and the rate of change of each of these parameters.
+
+If the resources are available this algorithm could be deployed in a cluster computing environment and a genetic or evolutionary algorithm could be used to create better agents. In this scenario many agents could be deployed at once each with varying hyperparamters and each would be trained in paralell until convergence. A selection process could then be used to choose better hyperparameters based on the best performing agents. This process can repeat until a final set of hyperparamters is found. 
+
+Another benefit of distributed learning in a cluster computing environment could be a collective memory between all of the agents. A shared memory buffer between could be used to store experiences from all of the agents and any agent could sample from this buffer for their learning process. Particularly rare experiences seen by one agent could then be shared among all of the agents in their learning process. In this scenario a background process could also be in charge of organizing and serving memories to agents to create a more sophisticated sampling process for agents. 
