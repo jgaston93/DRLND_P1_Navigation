@@ -15,7 +15,7 @@ There are four discrete actions available to the agent which are 0, 1, 2, 3. The
 This particular environment is considered solved when the agent is able to achieve an average score of +13 over 100 consecutive episodes. 
 
 ### Getting Started
-To set up your python environment to run the code in this repository, follow the instructions below.
+Begin by cloning this repo and then set up your python environment by running the code below.
 
 1.  Create (and activate) a new environment with Python 3.6.
     
