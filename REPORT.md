@@ -90,6 +90,12 @@ In this implementation the agent was able to solve the environment in 457 episod
 
 These plots could be helpful in showing how B and Epsilon affect convergence to better tune these two variables. 
 
+##### Trained Agent
+
+![Trained Agent](/images/trained_agent.gif?raw=true "Trained Agent")
+
+A gif of the trained agent using the saved weights is seen above. The agent can navigate between blue bananas and specifically targets the yellow bananas. 
+
 ### Ideas for Future Work
 
 The first obvious ideas for improvements are incorporating the three other improvements that were included in the Rainbow algorithm. These improvements include multi-step learning, distributional RL, and noisy nets. These three improvements combined with the ones already implemented in this repo have been shown to provide state-of-the-art performance on the Atari 2600 benchmark.
